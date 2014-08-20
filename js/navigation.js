@@ -21,7 +21,9 @@
   });
 
   function showCarDetails() {
-      
+      $("#dvPersonalDetails").hide();
+      $("#dvQuoteDetails").hide();
+      $("#dvCarDetails").show();  
     // Hide the personal details section (dvPersonalDetails)
     // Hide the quote section (dvQuoteDetails)
     // Show the car details section (dvCarDetails)
@@ -29,6 +31,9 @@
   }
 
   function showPersonalDetails() {
+      $("#dvPersonalDetails").show();
+      $("#dvQuoteDetails").hide();
+      $("#dvCarDetails").hide(); 
       // Hide the car details section (dvCarDetails)
       // Hide the quote section (dvQuoteDetails)
       // Show the personal details section (dvPersonalDetails)
@@ -43,8 +48,8 @@
   function getQuote() {
 
     // Perform validation to test that all data has been entered
-
-    if (/* Page is Valid */)
+/*
+    if ( Page is Valid )
     {
 
       // Get the values from the page elements that you need to create your JSON
@@ -52,12 +57,12 @@
       $.ajax({
           type: "GET",
           url: "http://localhost:53753/api/rating/CalculateRates",
-          data: { /* create JSON here */ }
+          data: { /* create JSON here / }
         }).done(function(msg) {
           // Put the return value into Label created on quote details
           // Hide the Car Details section
           // Display the quote details page
-      });
+      });*/
   }
 
 //################################# Helper Functions - look at these when validating and changing section #########################################

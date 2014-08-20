@@ -62,6 +62,50 @@
               </div>
             </div>
 
+            <div class="form-group">
+              <label for="AgeInput" class="control-label col-md-2">Age</label>
+              <div class="col-md-4">
+                <input id="Ageinput" type="number" name="AgeInput" class="form-control personalDetails" placeholder="Your Age" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="GenderInput" class="control-label col-md-2">Gender</label>
+              <div class="col-md-4">
+                <input Class="Genderinput" type="radio" name="GenderInput" "form-control personalDetails" value="Male">Male<br>
+                <input Class="Genderinput" type="radio" name="GenderInput" "form-control personalDetails" value="Female">Female<br>
+              </div>
+            </div>
+
+             <div class="form-group">
+              <label for="LocationInput" class="control-label col-md-2">Town/City</label>
+              <div class="col-md-4">
+                <input id="LocationName" type="text" name="LocationInput" class="form-control personalDetails" placeholder="Your City/Town" />
+              </div>
+            </div>
+
+             <div class="form-group">
+              <label for="EmailInput" class="control-label col-md-2">Email</label>
+              <div class="col-md-4">
+                <input id="EmailName" type="text" name="EmailInput" class="form-control personalDetails" placeholder="Someone@AnEmailSite.co.uk" />
+              </div>
+            </div>
+
+             <div class="form-group">
+              <label for="NoClaimsBonusInput" class="control-label col-md-2">No Claims Bonus (in years)</label>
+              <div class="col-md-4">
+                <select id="No Claims Bonus" name="No Claims Bonus" class="form-control personalDetails"> 
+                  <option id-"No Claims"> Your no claims bonus </option>
+                  <option> 1 </option>
+                  <option> 2 </option> 
+                  <option> 3 </option>
+                  <option> 4 </option>
+                  <option> 5+ </option> 
+                </select>
+              </div>
+            </div>
+
+
             <!-- The code for the remainder of the personal fields will be added here -->
 
             <div class="form-group">
@@ -76,9 +120,83 @@
 
       <!-- WRAP CAR DETAILS FORM IN CHILD PANEL -->
       <div id="dvCarDetails" class="dvCarDetails">
-        <!-- Code for the car details section to be added here -->
+        <div id="dvPersonalDetailsAlert" class="alert alert-warning personalDetailsAlert">Error Message</div>
+        <h1>Car details</h1>
+        <p>In order to provide you with a quote, we need to know a little bit about your car.</p>
+
+      <div class="row">
+          <form class="form-horizontal">
+      
+
+      <div class="form-group">
+              <label for="ManufacturerInput" class="control-label col-md-2">Manufacturer</label>
+              <div class="col-md-4">
+                <select id="Manufacturer" name="Manufacturer" class="form-control carDetails"> 
+                  <option id-"Manufacturer"> Manufacturer </option>
+                  <option> Audi </option>
+                  <option> BMW </option> 
+                  <option> Citroen </option>
+                  <option> Mini </option>
+                  <option> Toyota </option>
+                  <option> Volkswagen </option> 
+                </select>
+              </div>         
+      </div>  
+      
+      <div class="form-group">
+              <label for="ModelInput" class="control-label col-md-2">Model</label>
+              <div class="col-md-4">
+                <input id="ModelName" type="text" name="ModelInput" class="form-control CarDetails" placeholder="Your model of car." />
+              </div>      
       </div>
 
+       <div class="form-group">
+              <label for="CarAgeInput" class="control-label col-md-2">Car Age</label>
+              <div class="col-md-4">
+                <input id="CarAge" type="Number" name="CarAge" class="form-control CarDetails" placeholder="How old is your car." />
+              </div>
+       </div>
+
+         <div class="form-group">
+              <label for="EngineSize" class="control-label col-md-2">Engine size</label>
+              <div class="col-md-4">
+                <input id="EngineSize" type="text" name="EngineSize" class="form-control carDetails" placeholder="Your models engine" />
+              </div>
+          </div>
+              
+          <div class="form-group">
+              <label for="StorageType" class="control-label col-md-2">Storage</label>
+              <div class="col-md-4">
+                <select id="Storage" name="Storage" class="form-control carDetails"> 
+                  <option id-"Storage"> Storage Type </option>
+                  <option> Garage </option>
+                  <option> Driveway </option> 
+                  <option> Cul-de-sac </option>
+                  <option> Public road </option>
+                </select>
+              </div>
+          </div>
+
+         <div class="form-group">
+              <label for="EstimatedValue" class="control-label col-md-2">EstimatedValue</label>
+              <div class="col-md-4">
+                <input id="EstimatedValue" type="text" name="EstimatedValue" class="form-control CarDetails" placeholder="How much your car is estimated to be worth" />
+              </div>
+          </div>
+         
+          
+          <div class="form-group">
+              <div class="col-md-4">
+                <input id="btnBack" value="Back" class="btn btn-default btn-sm btn-success" onclick="showPersonalDetails()" />
+              </div>
+          </div>
+          <div class="form-group">
+              <div class="col-md-4">
+                <input id="btnGetQuote" value="Get Quote" class="btn btn-default btn-sm btn-success" onclick="showQuoteDetails()" />
+              </div>
+          </div>
+        </form>
+      </div>
 
       <!-- WRAP Quote DETAILS FORM IN CHILD PANEL -->
       <div id="dvQuoteDetails" class="dvQuoteDetails">
