@@ -48,7 +48,7 @@
 
       <!-- WRAP PERSONAL DETAILS FORM IN CHILD PANEL --> 
       <div id="dvPersonalDetails">
-        <div id="dvPersonalDetailsAlert" class="alert alert-warning personalDetailsAlert">Error Message</div>
+        <div id="dvPersonalDetailsAlert" class="alert alert-warning personalDetailsAlert">You have left out information, please fill in all boxes (Age must be 17 or up)</div>
         <h1>Please enter your details</h1>
         <p>In order to provide you with a quote, we need a few details. Please complete the form below. Thanks.</p>
 
@@ -94,7 +94,7 @@
              <div class="form-group">
               <label for="NoClaimsBonusInput" class="control-label col-md-2">No Claims Bonus (in years)</label>
               <div class="col-md-4">
-                <select id="No Claims Bonus" name="No Claims Bonus" class="form-control personalDetails"> 
+                <select id="ddlNcb" name="No Claims Bonus" class="form-control personalDetails"> 
                   <option id-"No Claims"> Your no claims bonus </option>
                   <option> 1 </option>
                   <option> 2 </option> 
@@ -192,7 +192,7 @@
           </div>
           <div class="form-group">
               <div class="col-md-4">
-                <input id="btnGetQuote" value="Get Quote" class="btn btn-default btn-sm btn-success" onclick="showQuoteDetails()" />
+                <input id="btnGetQuote" value="Get Quote" class="btn btn-default btn-sm btn-success" onclick="getQuote()" />
               </div>
           </div>
         </form>

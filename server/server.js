@@ -26,7 +26,7 @@
 		res.json({message: 'Welcome to the Car Insurance API.  Provide the correct URL and JSON to calculate the rates'});
 	});
 
-	router.post('/calculateRates', function(req, res) {
+	router.get('/calculateRates', function(req, res) {
 		// This is the JSON object that we passed as a parameter.  Values can be accessed by model.ValueName
 		// i.e. model.age
 
@@ -56,4 +56,4 @@
 // recieve incoming requests using the URLs and log to the server user that it has started
 // ==================================================================================================
 api.listen(port);
-console.log('The server is now running and can be accessed at http://localhost:8080/api');
+console.log('The server is now running and can be accessed at http://localhost:53753/api');

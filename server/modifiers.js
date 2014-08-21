@@ -13,6 +13,32 @@ module.exports = {
 	    //Set a default value for the modifier
         var modifier = 1.08;
 
+        if (gender=="Male")
+        {
+                if (age > 17 || age < 21)
+                {
+                 modifier = 1.5;
+                }
+                else if(age > 21 || age < 25)
+                {
+                 modifier = 1.15        
+                }
+                else if (age >= 25)
+                {
+                 modifier = 1.12       
+                }
+        }
+        if (gender=="Female")
+        {
+                if (age < 25)
+                {
+                 modifier = 1.1        
+                }        
+                else
+                {
+                modifier = 1.08       
+                }  
+        }      
         /* Applies following rules:
          *      - If male and between 17 and 21 then rate is 1.5
          *      - If male and between 21 and 25 then rate is 1.15
